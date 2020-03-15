@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.atguigu.springcloud</groupId>
-            <artifactId>cloud-api-common</artifactId>
+            <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -30,6 +30,14 @@
                 <exclusion>
                     <groupId>org.apache.zookeeper</groupId>
                     <artifactId>zookeeper</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>HdrHistogram</artifactId>
+                    <groupId>org.hdrhistogram</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
