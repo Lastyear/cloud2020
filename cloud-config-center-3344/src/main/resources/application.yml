@@ -9,7 +9,8 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:leelovejava/springcloud-config.git
+          skipSslValidation: true
+          uri: https://github.com/Lastyear/cloud2020-config.git
           search-paths:
             - spring-config
       label: master
@@ -23,7 +24,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 
 # 暴露bus刷新配置的端点
 
